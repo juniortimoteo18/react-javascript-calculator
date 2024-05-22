@@ -39,7 +39,7 @@ function App() {
     <div className="App">
       <div className='calculator'>
         <div id="display" className='row'>{display}</div>
-        <div id="clear" className='row'>AC</div>
+        <div id="clear" className='row' onClick={handleClear} >AC</div>
         <div id="seven" onClick={handleNumber} >7</div>
         <div id="eight" onClick={handleNumber} >8</div>
         <div id="nine" onClick={handleNumber} >9</div>
