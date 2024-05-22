@@ -18,7 +18,12 @@ function App() {
   }
 
   const handleEqual = (event) => {
-    setDisplay(eval(display));
+    const array = display.split(' ');
+    const lastElement = array[array.length - 1];
+
+    if (lastElement !== '+') {
+      setDisplay(eval(display));
+    }
   }
 
   const handleDecimal = () => {
