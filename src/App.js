@@ -19,11 +19,22 @@ function App() {
 
   const handleEqual = (event) => {
     const array = display.split(' ');
+    console.log(array);
     const lastElement = array[array.length - 1];
 
-    if (lastElement !== '+') {
+    if (lastElement.includes('+')) {
       setDisplay(eval(display));
+    }else if (lastElement !== '-') {
+      setDisplay(eval(display));
+    }else if (lastElement !== '/') {
+      setDisplay(eval(display));
+    }else if (lastElement !== '*') {
+      setDisplay(eval(display));
+    }else if(lastElement !== ''){
+      setDisplay(display);
     }
+    
+   
   }
 
   const handleDecimal = () => {
