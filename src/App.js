@@ -19,19 +19,14 @@ function App() {
 
   const handleEqual = (event) => {
     const array = display.split(' ');
-    console.log(array);
+    //console.log(array);
     const lastElement = array[array.length - 1];
+    //console.log(lastElement);
 
-    if (lastElement.includes('+')) {
+    if (lastElement === ''){
+      setDisplay(array[0]);
+    }else {
       setDisplay(eval(display));
-    }else if (lastElement !== '-') {
-      setDisplay(eval(display));
-    }else if (lastElement !== '/') {
-      setDisplay(eval(display));
-    }else if (lastElement !== '*') {
-      setDisplay(eval(display));
-    }else if(lastElement !== ''){
-      setDisplay(display);
     }
     
    
