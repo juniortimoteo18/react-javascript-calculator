@@ -47,7 +47,7 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div className="app">
       <div className='calculator'>
         <div id="display" className='row'>{display}</div>
         <div id="clear" className='row' onClick={handleClear} >AC</div>
